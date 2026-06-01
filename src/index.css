@@ -5,21 +5,27 @@
 }
 
 body {
-  background-color: black;
+  background: black;
   color: #00ffcc;
   font-family: Consolas, monospace;
 }
 
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #00ffcc;
+}
+
 .boot-screen {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   padding: 40px;
 }
 
 h1 {
+  font-size: 4rem;
   margin-bottom: 30px;
-  font-size: 3rem;
+  text-shadow: 0 0 10px #00ffcc;
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
