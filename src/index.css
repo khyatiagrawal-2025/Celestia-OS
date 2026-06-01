@@ -39,3 +39,20 @@ p {
     opacity: 0;
   }
 }
+
+.mission-control {
+  padding: 40px;
+}
+
+.planet-card {
+  border: 1px solid #00ffcc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.planet-card:hover {
+  transform: scale(1.05);
+}
