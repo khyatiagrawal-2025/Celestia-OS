@@ -159,3 +159,8 @@ p {
 
   border-radius: 50%;
 }
+
+.planet-link {
+  text-decoration: none;
+  color: inherit;
+}

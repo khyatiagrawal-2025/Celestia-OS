@@ -1,29 +1,24 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar";
-import BootScreen from "./components/boot/BootScreen";
-import MissionControl from "./components/mission/MissionControl";
+
+import Home from "./pages/Home";
+import PlanetDetails from "./pages/PlanetDetails";
 
 function App() {
-  const [bootComplete, setBootComplete] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setBootComplete(true);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
 
-      {bootComplete ? (
-        <MissionControl />
-      ) : (
-        <BootScreen />
-      )}
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="/planet/:planetName"
+          element={<PlanetDetails />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
