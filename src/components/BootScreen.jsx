@@ -18,8 +18,6 @@ function BootScreen() {
     <div className="boot-screen">
       <h2>🌌 CELESTIA OS</h2>
 
-      <span className="cursor">|</span>
-
       {step >= 1 && <p>{">"} Initializing Celestial Systems...</p>}
 
       {step >= 2 && <p>{">"} Loading Star Maps...</p>}
