@@ -1,22 +1,32 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/layout/Navbar";
-
-import Home from "./pages/Home";
+import LandingPage from "./pages/LandingPage";
+import LoginPage from "./pages/LoginPage";
+import BootPage from "./pages/BootPage";
+import UniverseGate from "./pages/UniverseGate";
+import Dashboard from "./pages/Dashboard";
 import PlanetDetails from "./pages/PlanetDetails";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-
       <Routes>
-        <Route path="/" element={<Home />} />
+
+        <Route path="/" element={<LandingPage />} />
+
+        <Route path="/login" element={<LoginPage />} />
+
+        <Route path="/boot" element={<BootPage />} />
+
+        <Route path="/gate" element={<UniverseGate />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
 
         <Route
           path="/planet/:planetName"
           element={<PlanetDetails />}
         />
+
       </Routes>
     </BrowserRouter>
   );

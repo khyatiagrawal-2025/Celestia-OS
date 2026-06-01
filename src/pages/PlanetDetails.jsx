@@ -4,10 +4,18 @@ function PlanetDetails() {
   const { planetName } = useParams();
 
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>{planetName.toUpperCase()}</h1>
+    <div className="planet-details">
+      <h1>
+        PLANET DATABASE
+      </h1>
 
-      <p>Planet information loading...</p>
+      <h2>{planetName.toUpperCase()}</h2>
+
+      <div className="info-box">
+        <p>Status: Scannable</p>
+        <p>Explorer Access: Granted</p>
+        <p>Mission Database: Connected</p>
+      </div>
     </div>
   );
 }

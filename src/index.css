@@ -164,3 +164,17 @@ p {
   text-decoration: none;
   color: inherit;
 }
+
+.planet-details {
+  padding: 40px;
+}
+
+.info-box {
+  margin-top: 20px;
+
+  border: 1px solid #00ffcc;
+
+  padding: 20px;
+
+  border-radius: 12px;
+}

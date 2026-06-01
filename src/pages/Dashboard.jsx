@@ -1,7 +1,7 @@
 import MissionControl from "../components/mission/MissionControl";
 
-function Home() {
+function Dashboard() {
   return <MissionControl />;
 }
 
-export default Home;
+export default Dashboard;
