@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import BootScreen from "./components/BootScreen";
-import MissionControl from "./components/MissionControl";
+import Navbar from "./components/layout/Navbar";
+import BootScreen from "./components/boot/BootScreen";
+import MissionControl from "./components/mission/MissionControl";
 
 function App() {
   const [bootComplete, setBootComplete] = useState(false);
