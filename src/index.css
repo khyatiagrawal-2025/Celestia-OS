@@ -6,12 +6,11 @@
 
 body {
   background:
-    radial-gradient(circle at top,
-      #0d1b2a,
-      #000000);
-
-  color: #00ffcc;
-  font-family: Consolas, monospace;
+radial-gradient(
+circle at top,
+#112240,
+#050505 60%
+);
 }
 
 .navbar {
@@ -177,4 +176,72 @@ p {
   padding: 20px;
 
   border-radius: 12px;
+}
+
+.landing-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.main-title {
+  font-size: 6rem;
+
+  letter-spacing: 8px;
+
+  text-shadow:
+    0 0 20px #00ffcc,
+    0 0 50px #00ffcc;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+
+  font-size: 1.3rem;
+
+  opacity: 0.9;
+}
+
+.creator-card {
+  margin-top: 40px;
+
+  border: 1px solid #00ffcc;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  backdrop-filter: blur(10px);
+}
+
+.launch-btn {
+  margin-top: 40px;
+
+  padding: 15px 35px;
+
+  font-size: 1.1rem;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.launch-btn:hover {
+  transform: scale(1.05);
 }
